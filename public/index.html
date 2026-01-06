@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CampusMeet P2P</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    video {
+      width: 320px;
+      border: 2px solid black;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<h2>CampusMeet - P2P (WebRTC + WebSocket)</h2>
+
+<!-- Local Video -->
+<video id="localVideo" autoplay muted playsinline></video>
+
+<!-- Remote Video -->
+<video id="remoteVideo" autoplay playsinline></video>
+
+<br><br>
+<button onclick="join()">Join Meeting</button>
+
+<script src="client.js"></script>
+</body>
+</html>
